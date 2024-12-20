@@ -96,6 +96,8 @@ app.post('/webhook', function(req, res) {
         reply = "Yes";
       } else if(msg_body == "hi" || msg_body == "hello"){
         reply = "hi, how are you agent?";
+      } else if(msg_body == "Hi, I'm an AI service assistant. How can I help you?"){
+        reply = "I want to speak with an agent.";
       } else if (msg_body == "how can I help?") {
         reply = "Ack: " + msg_body;
       } else if (msg_body == "sure. what is the problem?") {
